@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .SecondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+main hr {
+    border: 0;
+    background: rgb(122, 122, 238);
+    height: 1px;
+    margin: 40px 80px;
+}
+
+.SecondSection h1 {
+    font-size: 1.9rem;
+}
+
+.SecondSection .heading {
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.text-grey {
+    color: gray;
+}
+
+.SecondSection .line {
+    background-color: transparent;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.SecondSection .vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.image-top {
+    width: 45px;
+    transition: 0.3s;
+}
+
+.image-top:hover {
+    transform: scale(1.2);
+}
+
+.vertical-title {
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.vertical-desc {
+    font-size: 13px;
+    color: gray;
+    margin-top: 5px;
+    max-width: 150px;
+}
+
+@media (max-width: 500px) {
+    .SecondSection {
+        max-width: 90vw;
+    }
+
+    .SecondSection .line {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SecondSection .vertical {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .vertical-title, .vertical-desc {
+        max-width: 90%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="SecondSection">
+        <div class="heading">
+            <span class="text-grey">what i have done so far ?</span>
+            <h1>Languages</h1>
+        </div>
+    
+        <div class="line">
+            <div class="vertical">
+                <img class="image-top" src="img/html.png" alt="html.png">
+                <div class="vertical-title">HTML</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.</div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="img/css.png" alt="css.png">
+                <div class="vertical-title">CSS</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.</div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="img/javascript.png" alt="javascript.png">
+                <div class="vertical-title">JAVA SCRIPT</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.</div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="img/nodejs.png" alt="nodejs.png">
+                <div class="vertical-title">Node JS</div>
+                <div class="vertical-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.</div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

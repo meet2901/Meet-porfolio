@@ -184,7 +184,7 @@ main hr {
     color: gray;
 }
 
-.SecondSection .box {
+.SecondSection .line {
     background-color: white;
     width: 80vw;
     height: 2px;
@@ -227,6 +227,34 @@ main hr {
     font-size: 13px;
     width: 150px;
     color: gray;
+}
+@media (max-width: 500px) {
+    .SecondSection {
+        max-width: 90vw;
+    }
+
+    .SecondSection .line {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .SecondSection .vertical {
+        width: 100%;
+        margin: 10px 0;
+    } */
+
+    .vertical-title, .vertical-desc {
+        max-width: 90%;
+    }
+    .vertical-title{
+        font-size: 12px;
+        width:40px;
+    }
+    .vertical-desc{
+        font-size: 10px;
+        width: 150px;
+    }
 }
 /*sectionSecond complete*/
 
