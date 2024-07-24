@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="">Meet's Portfolio</a></div>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="right" id="nav-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Meet</span>
+                <div>
+                    and I am a passionate
+                </div>
+                <span id="element"></span>
+                <!-- <div>Devloper</div> -->
+            </div>
+            <div class="rightSection">
+                <img src="/img/first.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="SecondSection">
+
+            <div class="heading">
+                <span class="text-grey">what i have done so far ?</span>
+                <h1>Languages</h1>
+            </div>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="img/html.png" alt="html.png">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/css.png" alt="html.png">
+                    <div class="vertical-title">
+                        CSS
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/javascript.png" alt="html.png">
+                    <div class="vertical-title">
+                        JAVA SCRIPT
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/nodejs.png" alt="html.png">
+                    <div class="vertical-title">
+                        Node JS
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, quibusdam.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <div class="heading">
+            <h1>My Project</h1>
+        </div>
+        <section id="projects">
+            <div class="project">
+                <h2>Project Title 1</h2>
+                <img src="img/css.png" alt="Project 1 Screenshot">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel malesuada arcu.</p>
+            </div>
+            <div class="project">
+                <h2>Project Title 2</h2>
+                <img src="img/css.png" alt="Project 2 Screenshot">
+                <p>Integer feugiat, sapien a suscipit commodo, nisl purus ullamcorper eros.</p>
+            </div>
+            <div class="project">
+                <h2>Project Title 3</h2>
+                <img src="img/css.png" alt="Project 3 Screenshot">
+                <p>Morbi consequat, turpis sit amet condimentum bibendum, nisl arcu aliquam eros.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Meet's Devloper Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>home</li>
+                    <li>home</li>
+                    <li>home</li>
+                    <li>home</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>contact</li>
+                    <li>contact</li>
+                    <li>contact</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">www.Meetportfolio.com || All right reserved</div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Backend Devloper', 'Frontend Devloper'],
+            typeSpeed: 90,
+            backSpeed: 70,
+            backDelay: 100,
+            startDelay: 1000,
+            smartBackspace: true,
+            loop: true,
+        });
+        
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+
+            hamburger.addEventListener('click', function () {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+                hamburger.classList.toggle('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
